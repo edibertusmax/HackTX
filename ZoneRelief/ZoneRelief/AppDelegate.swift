@@ -9,6 +9,8 @@
 import UIKit
 import GoogleMaps
 import GooglePlaces
+import TwitterKit
+import TwitterCore
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,8 +22,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // Override point for customization after application launch.
     GMSPlacesClient.provideAPIKey("AIzaSyAd7xwBVlOJRx2hT2pQVh9qy3u212mo6uI")
     GMSServices.provideAPIKey("AIzaSyAd7xwBVlOJRx2hT2pQVh9qy3u212mo6uI")
+    
+    Twitter.sharedInstance().start(withConsumerKey:"MYqFiS0rcWHa56IOcuJiYZyzT", consumerSecret:"upk4KelhP2VmlmcNX3PziwvQxKxkjMfRP3xvPByhVWxaRllF2k")
+    
     return true
   }
+
 
   func applicationWillResignActive(_ application: UIApplication) {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

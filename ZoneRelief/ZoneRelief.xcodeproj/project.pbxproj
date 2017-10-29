@@ -12,6 +12,8 @@
 		A09A40241FA55568006D439C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A09A40221FA55568006D439C /* Main.storyboard */; };
 		A09A40261FA55568006D439C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A09A40251FA55568006D439C /* Assets.xcassets */; };
 		A09A40291FA55568006D439C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A09A40271FA55568006D439C /* LaunchScreen.storyboard */; };
+		A0CBB65A1FA5DC0E00196D7B /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0CBB6581FA5DC0E00196D7B /* TwitterCore.framework */; };
+		A0CBB65B1FA5DC0E00196D7B /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0CBB6591FA5DC0E00196D7B /* TwitterKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,9 @@
 		A09A40251FA55568006D439C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A09A40281FA55568006D439C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A09A402A1FA55568006D439C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0CBB6561FA5DBC800196D7B /* Twitter-Kit-iOS */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Twitter-Kit-iOS"; sourceTree = "<group>"; };
+		A0CBB6581FA5DC0E00196D7B /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterCore.framework; path = "Twitter-Kit-iOS/TwitterCore.framework"; sourceTree = "<group>"; };
+		A0CBB6591FA5DC0E00196D7B /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterKit.framework; path = "Twitter-Kit-iOS/TwitterKit.framework"; sourceTree = "<group>"; };
 		F783D9A9B090CE05B7787038 /* Pods-ZoneRelief.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZoneRelief.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZoneRelief/Pods-ZoneRelief.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -31,6 +36,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0CBB65A1FA5DC0E00196D7B /* TwitterCore.framework in Frameworks */,
+				A0CBB65B1FA5DC0E00196D7B /* TwitterKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,6 +56,8 @@
 		7C398C7778D0D6462B3A65DD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A0CBB6581FA5DC0E00196D7B /* TwitterCore.framework */,
+				A0CBB6591FA5DC0E00196D7B /* TwitterKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -56,6 +65,7 @@
 		A09A40121FA55568006D439C = {
 			isa = PBXGroup;
 			children = (
+				A0CBB6561FA5DBC800196D7B /* Twitter-Kit-iOS */,
 				A09A401D1FA55568006D439C /* ZoneRelief */,
 				A09A401C1FA55568006D439C /* Products */,
 				0BD12AEE1BC43F4F01335DAF /* Pods */,
@@ -179,6 +189,8 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-ZoneRelief/Pods-ZoneRelief-resources.sh",
 				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
 				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -354,6 +366,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Twitter-Kit-iOS",
+				);
 				INFOPLIST_FILE = ZoneRelief/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hacktx.ZoneRelief;
@@ -369,6 +385,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Twitter-Kit-iOS",
+				);
 				INFOPLIST_FILE = ZoneRelief/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hacktx.ZoneRelief;

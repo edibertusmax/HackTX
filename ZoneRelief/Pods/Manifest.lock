@@ -6,15 +6,21 @@ PODS:
     - GoogleMaps/Base
   - GooglePlaces (2.5.0):
     - GoogleMaps/Base (= 2.5.0)
+  - TwitterCore (3.0.2)
+  - TwitterKit (3.2.1):
+    - TwitterCore (>= 3.0.2)
 
 DEPENDENCIES:
   - GoogleMaps
   - GooglePlaces
+  - TwitterKit
 
 SPEC CHECKSUMS:
   GoogleMaps: c087b8e5dfe87ca6ebf59adb9b4894a4146bec4f
   GooglePlaces: dd70d9d71ea1c7944846afe67de3712c99b30a77
+  TwitterCore: e0420b01e02e7d20e94690e37f43e75de219ab8d
+  TwitterKit: 205ac89824bbfe9e85a16c420d30bb7bcbedac45
 
-PODFILE CHECKSUM: 592e8d12979f371bd0512ef056db76585c93cf75
+PODFILE CHECKSUM: 4cb3dd07f370b6dc4809429ca18977a66366bd5a
 
 COCOAPODS: 1.3.1
