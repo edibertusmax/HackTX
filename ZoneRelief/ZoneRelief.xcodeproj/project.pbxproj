@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0FF26B5B231E8132F322E268 /* Pods_ZoneRelief.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78654C582178C11B5D5BC1D2 /* Pods_ZoneRelief.framework */; };
 		A09A401F1FA55568006D439C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09A401E1FA55568006D439C /* AppDelegate.swift */; };
 		A09A40211FA55568006D439C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09A40201FA55568006D439C /* ViewController.swift */; };
 		A09A40241FA55568006D439C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A09A40221FA55568006D439C /* Main.storyboard */; };
@@ -16,9 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		398F0CE2C56B01DB0DAED32F /* Pods-ZoneRelief.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZoneRelief.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZoneRelief/Pods-ZoneRelief.release.xcconfig"; sourceTree = "<group>"; };
-		78654C582178C11B5D5BC1D2 /* Pods_ZoneRelief.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZoneRelief.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		97FA55FAC7E465D5C3ED73B3 /* Pods-ZoneRelief.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZoneRelief.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZoneRelief/Pods-ZoneRelief.debug.xcconfig"; sourceTree = "<group>"; };
+		65EBF47C1AD05FF9C95C956C /* Pods-ZoneRelief.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZoneRelief.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZoneRelief/Pods-ZoneRelief.debug.xcconfig"; sourceTree = "<group>"; };
 		A09A401B1FA55568006D439C /* ZoneRelief.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZoneRelief.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A09A401E1FA55568006D439C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A09A40201FA55568006D439C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +23,7 @@
 		A09A40251FA55568006D439C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A09A40281FA55568006D439C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A09A402A1FA55568006D439C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F783D9A9B090CE05B7787038 /* Pods-ZoneRelief.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZoneRelief.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZoneRelief/Pods-ZoneRelief.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,20 +31,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FF26B5B231E8132F322E268 /* Pods_ZoneRelief.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		69EA66572B5A539C79014D8E /* Pods */ = {
+		0BD12AEE1BC43F4F01335DAF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				97FA55FAC7E465D5C3ED73B3 /* Pods-ZoneRelief.debug.xcconfig */,
-				398F0CE2C56B01DB0DAED32F /* Pods-ZoneRelief.release.xcconfig */,
+				65EBF47C1AD05FF9C95C956C /* Pods-ZoneRelief.debug.xcconfig */,
+				F783D9A9B090CE05B7787038 /* Pods-ZoneRelief.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		7C398C7778D0D6462B3A65DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		A09A40121FA55568006D439C = {
@@ -54,8 +58,8 @@
 			children = (
 				A09A401D1FA55568006D439C /* ZoneRelief */,
 				A09A401C1FA55568006D439C /* Products */,
-				69EA66572B5A539C79014D8E /* Pods */,
-				A26FBAC9B76F7034D152F510 /* Frameworks */,
+				0BD12AEE1BC43F4F01335DAF /* Pods */,
+				7C398C7778D0D6462B3A65DD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,14 +84,6 @@
 			path = ZoneRelief;
 			sourceTree = "<group>";
 		};
-		A26FBAC9B76F7034D152F510 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				78654C582178C11B5D5BC1D2 /* Pods_ZoneRelief.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -95,12 +91,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A09A402D1FA55568006D439C /* Build configuration list for PBXNativeTarget "ZoneRelief" */;
 			buildPhases = (
-				4941C6563CFE60646BD47B9D /* [CP] Check Pods Manifest.lock */,
+				D4250D1B7E0FCB2282552963 /* [CP] Check Pods Manifest.lock */,
 				A09A40171FA55568006D439C /* Sources */,
 				A09A40181FA55568006D439C /* Frameworks */,
 				A09A40191FA55568006D439C /* Resources */,
-				4EE982915DF8C402D14CF498 /* [CP] Embed Pods Frameworks */,
-				80C3B3A394F86B251C3D9173 /* [CP] Copy Pods Resources */,
+				39B345A405B72A3D7235FDE4 /* [CP] Embed Pods Frameworks */,
+				49DA94753FC33D41DC2A31A5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -159,25 +155,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4941C6563CFE60646BD47B9D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ZoneRelief-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4EE982915DF8C402D14CF498 /* [CP] Embed Pods Frameworks */ = {
+		39B345A405B72A3D7235FDE4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -192,7 +170,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZoneRelief/Pods-ZoneRelief-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		80C3B3A394F86B251C3D9173 /* [CP] Copy Pods Resources */ = {
+		49DA94753FC33D41DC2A31A5 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -209,6 +187,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZoneRelief/Pods-ZoneRelief-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4250D1B7E0FCB2282552963 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZoneRelief-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -354,7 +350,7 @@
 		};
 		A09A402E1FA55568006D439C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 97FA55FAC7E465D5C3ED73B3 /* Pods-ZoneRelief.debug.xcconfig */;
+			baseConfigurationReference = 65EBF47C1AD05FF9C95C956C /* Pods-ZoneRelief.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -369,7 +365,7 @@
 		};
 		A09A402F1FA55568006D439C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 398F0CE2C56B01DB0DAED32F /* Pods-ZoneRelief.release.xcconfig */;
+			baseConfigurationReference = F783D9A9B090CE05B7787038 /* Pods-ZoneRelief.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
